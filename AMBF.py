@@ -316,7 +316,7 @@ def cek_apk(session,coki):
     x = sop.find("form",method="post")
     game = [i.text for i in x.find_all("h3")]
     if len(game)==0:
-        print(f'\r %s[%s!%s] %sSorry there is no Active ApplicationN,M,N))
+         print(f'\r %s[%s!%s] %sSorry there is no Active Apk%s  '%(N,M,N,M,N))
     else:
         print(f'\r 🎮  %sYour Active Application Details :'%(H))
         for i in range(len(game)):
