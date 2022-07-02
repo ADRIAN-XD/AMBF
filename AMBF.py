@@ -77,7 +77,7 @@ class Main:
 			os.remove("data/token");os.remove("data/coki")
 			exit(" ! Your token Expired ! ")
 		os.system("clear")
-		print("""\x1b[1;95m
+		print("""\x1b[1;92m
  ███▄ ▄███▓ █    ██   █████▒ █████▒██▓ ███▄    █ 
 ▓██▒▀█▀ ██▒ ██  ▓██▒▓██   ▒▓██   ▒▓██▒ ██ ▀█   █ 
 ▓██    ▓██░▓██  ▒██░▒████ ░▒████ ░▒██▒▓██  ▀█ ██▒
